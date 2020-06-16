@@ -1,9 +1,12 @@
 
 @extends('frontend.master')
 
-@section('meta_title', '')
-@section('meta_description', '')
-@section('meta_keyword', '')
+@section('meta_title', 'Wawan & Yuni Wedding | My Invitation')
+@section('meta_description', 'Pernikahan Wawan & Yuni	<br>
+Atas Berkat Tuhan Yang Maha Esa, kami bermaksud menyelenggarakan acara Pernikahan putra-putri kami.<br>
+Hisyam Rahmawan Suharno, S.T.,M.T Putra Pertama dari pasangan Bapak Wawan & Ibu Wawan - Badung Dengan Ni Luh Putu Yuni Antari Putri Pertama dari pasanganBapak Yuni & Ibu Yuni - Tabanan')
+@section('meta_keyword', 'wedding,couple,ceremony,reception,rsvp,gallery,event,countdown,wawan,yuni,bali,yogyakarta,indonesia')
+@section('meta_image', 'assets/images/slider/2.jpg')
 
 @section('content')
 
@@ -57,19 +60,19 @@
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <h2 class="deco id-color"><span>We Invite You</span></h2>
-                        <h2 data-wow-delay=".2s">Saturday, 25 November 2019</h2>
+                        <h2 data-wow-delay=".2s">Saturday, 29 December 2020</h2>
                     </div>
 
                     <div class="spacer-double"></div>
 
                     <div class="col-md-5 col-md-offset-1 text-right">
-                        <h3>Wedding Ceremony</h3>
-                        13:00 PM - 14:00 PM<br> 100 Mainstreet Center, Sydney<br>
+                        <h3>Akad Nikah</h3>
+                        Sabtu, 29 Desember 2020<br> 10:00 AM - 12:00 PM (WITA)<br> Masjid Agung Sudirman<br> Jl. Slamet Riyadi No.1, Kota Denpasar, Bali - Indonesia <br>
                     </div>
 
                     <div class="col-md-5">
-                        <h3>Wedding Reception</h3>
-                        14:00 PM - 16:00 PM<br> 100 Mainstreet Center, Sydney<br>
+                        <h3>Resepsi Pernikahan</h3>
+                        Sabtu, 29 Desember 2020<br> 17:00 PM - Selesai (WITA)<br> Aston Hotel Denpasar<br> Jl. Gatot Subroto Barat No.283, Kota Denpasar, Bali - Indonesia <br>
                     </div>
 
                     <div class="spacer-double"></div>
@@ -86,18 +89,21 @@
 
                         <div class="col-md-3">
                             <select id="guest" name="guest" size="1" class="form-control">
-                            <option value="" disabled selected>Guests</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
+                                <option value="0" disabled selected>Guests</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
                             </select>
                         </div>
 
                         <div class="col-md-3">
                             <select id="attend" name="attend" size="1" class="form-control">
-                            <option value="" disabled selected>Are you attending?</option>
-                            <option>yes</option>
-                            <option>no</option>
+                                <option value="" disabled selected>Are you attending?</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                                <option value="uncertain">Uncertain</option>
                             </select>
                         </div>
 
@@ -213,7 +219,7 @@
                     </div>
                     <div class="col-md-8 col-md-offset-2" style="background-size: cover;">
                         <div class="spacer-double" style="background-size: cover;"></div>
-                        <div id="defaultCountdown" class="wow fadeIn is-countdown animated" style="background-size: cover; visibility: visible; animation-name: fadeIn;"><span class="countdown-row countdown-show3"><span class="countdown-section"><span class="countdown-amount">0</span><span class="countdown-period">Hours</span></span><span class="countdown-section"><span class="countdown-amount">0</span><span class="countdown-period">Minutes</span></span><span class="countdown-section"><span class="countdown-amount">0</span><span class="countdown-period">Seconds</span></span></span></div>
+                        <div id="defaultCountdown" class="wow fadeIn is-countdown animated" style="background-size: cover; visibility: visible; animation-name: fadeIn;"><span class="countdown-row countdown-show3"><span class="countdown-section"><span class="countdown-amount">720</span><span class="countdown-period">Hours</span></span><span class="countdown-section"><span class="countdown-amount">50</span><span class="countdown-period">Minutes</span></span><span class="countdown-section"><span class="countdown-amount">20</span><span class="countdown-period">Seconds</span></span></span></div>
                         <div class="spacer-single" style="background-size: cover;"></div>
                     </div>
                 </div>
@@ -287,15 +293,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h2>Our Gallery</h2>
+                        <h2>Gallery Photo</h2>
                         <div class="spacer-single"></div>
                     </div>
 
                     <div class="col-md-12">
                         <div class="de_tab tab_style_3 text-center">
                             <ul class="de_nav">
-                                <li class="active" data-link="#section-services-tab"><span>The Wedding</span></li>
-                                <li data-link="#section-services-tab"><span>Our Best Friends</span></li>
+                                <li class="active" data-link="#section-services-tab"><span>Pre Wedding</span></li>
+                                <li data-link="#section-services-tab"><span>Kebersamaan</span></li>
                             </ul>
 
                             <div class="de_tab_content">
@@ -305,67 +311,67 @@
 
                                         <div class="col-md-4 text-center mb10">
                                             <figure class="picframe img-rounded mb20">
-                                                <a class="image-popup" href="images/gallery/category-1/1.jpg">
+                                                <a class="image-popup" href="{{ asset('assets/images/gallery/category-1/1.jpg') }}">
                                                     <span class="overlay-v">
                                                         <i></i>
                                                     </span>
                                                 </a>
-                                                <img src="images/gallery/category-1/1.jpg" class="img-responsive img-rounded" alt="">
+                                                <img src="{{ asset('assets/images/gallery/category-1/1.jpg') }}" class="img-responsive img-rounded" alt="">
                                             </figure>
                                         </div>
 
                                         <div class="col-md-4 text-center mb10">
                                             <figure class="picframe img-rounded mb20">
-                                                <a class="image-popup" href="images/gallery/category-1/2.jpg">
+                                                <a class="image-popup" href="{{ asset('assets/images/gallery/category-1/2.jpg') }}">
                                                     <span class="overlay-v">
                                                         <i></i>
                                                     </span>
                                                 </a>
-                                                <img src="images/gallery/category-1/2.jpg" class="img-responsive img-rounded" alt="">
+                                                <img src="{{ asset('assets/images/gallery/category-1/2.jpg') }}" class="img-responsive img-rounded" alt="">
                                             </figure>
                                         </div>
 
                                         <div class="col-md-4 text-center mb10">
                                             <figure class="picframe img-rounded mb20">
-                                                <a class="image-popup" href="images/gallery/category-1/3.jpg">
+                                                <a class="image-popup" href="{{ asset('assets/images/gallery/category-1/3.jpg') }}">
                                                     <span class="overlay-v">
                                                         <i></i>
                                                     </span>
                                                 </a>
-                                                <img src="images/gallery/category-1/3.jpg" class="img-responsive img-rounded" alt="">
+                                                <img src="{{ asset('assets/images/gallery/category-1/3.jpg') }}" class="img-responsive img-rounded" alt="">
                                             </figure>
                                         </div>
 
                                         <div class="col-md-4 text-center mb10">
                                             <figure class="picframe img-rounded mb20">
-                                                <a class="image-popup" href="images/gallery/category-1/4.jpg">
+                                                <a class="image-popup" href="{{ asset('assets/images/gallery/category-1/4.jpg') }}">
                                                     <span class="overlay-v">
                                                         <i></i>
                                                     </span>
                                                 </a>
-                                                <img src="images/gallery/category-1/4.jpg" class="img-responsive img-rounded" alt="">
+                                                <img src="{{ asset('assets/images/gallery/category-1/4.jpg') }}" class="img-responsive img-rounded" alt="">
                                             </figure>
                                         </div>
 
                                         <div class="col-md-4 text-center mb10">
                                             <figure class="picframe img-rounded mb20">
-                                                <a class="image-popup" href="images/gallery/category-1/5.jpg">
+                                                <a class="image-popup" href="{{ asset('assets/images/gallery/category-1/5.jpg') }}">
                                                     <span class="overlay-v">
                                                         <i></i>
                                                     </span>
                                                 </a>
-                                                <img src="images/gallery/category-1/5.jpg" class="img-responsive img-rounded" alt="">
+                                                <img src="{{ asset('assets/images/gallery/category-1/5.jpg') }}" class="img-responsive img-rounded" alt="">
                                             </figure>
                                         </div>
 
                                         <div class="col-md-4 text-center mb10">
                                             <figure class="picframe img-rounded mb20">
-                                                <a class="image-popup" href="images/gallery/category-1/6.jpg">
+                                                <a class="image-popup" href="{{ asset('assets/images/gallery/category-1/6.jpg') }}">
                                                     <span class="overlay-v">
                                                         <i></i>
                                                     </span>
                                                 </a>
-                                                <img src="images/gallery/category-1/6.jpg" class="img-responsive img-rounded" alt="">
+                                                <img src="{{ asset('assets/images/gallery/category-1/6.jpg') }}" class="img-responsive img-rounded" alt="">
                                             </figure>
                                         </div>
 
@@ -378,67 +384,67 @@
 
                                         <div class="col-md-4 text-center mb10">
                                             <figure class="picframe img-rounded mb20">
-                                                <a class="image-popup" href="images/gallery/category-3/1.jpg">
+                                                <a class="image-popup" href="{{ asset('assets/images/gallery/category-1/1.jpg') }}">
                                                     <span class="overlay-v">
                                                         <i></i>
                                                     </span>
                                                 </a>
-                                                <img src="images/gallery/category-3/1.jpg" class="img-responsive img-rounded" alt="">
+                                                <img src="{{ asset('assets/images/gallery/category-1/1.jpg') }}" class="img-responsive img-rounded" alt="">
                                             </figure>
                                         </div>
 
                                         <div class="col-md-4 text-center mb10">
                                             <figure class="picframe img-rounded mb20">
-                                                <a class="image-popup" href="images/gallery/category-3/2.jpg">
+                                                <a class="image-popup" href="{{ asset('assets/images/gallery/category-1/2.jpg') }}">
                                                     <span class="overlay-v">
                                                         <i></i>
                                                     </span>
                                                 </a>
-                                                <img src="images/gallery/category-3/2.jpg" class="img-responsive img-rounded" alt="">
+                                                <img src="{{ asset('assets/images/gallery/category-1/2.jpg') }}" class="img-responsive img-rounded" alt="">
                                             </figure>
                                         </div>
 
                                         <div class="col-md-4 text-center mb10">
                                             <figure class="picframe img-rounded mb20">
-                                                <a class="image-popup" href="images/gallery/category-3/3.jpg">
+                                                <a class="image-popup" href="{{ asset('assets/images/gallery/category-1/3.jpg') }}">
                                                     <span class="overlay-v">
                                                         <i></i>
                                                     </span>
                                                 </a>
-                                                <img src="images/gallery/category-3/3.jpg" class="img-responsive img-rounded" alt="">
+                                                <img src="{{ asset('assets/images/gallery/category-1/3.jpg') }}" class="img-responsive img-rounded" alt="">
                                             </figure>
                                         </div>
 
                                         <div class="col-md-4 text-center mb10">
                                             <figure class="picframe img-rounded mb20">
-                                                <a class="image-popup" href="images/gallery/category-3/4.jpg">
+                                                <a class="image-popup" href="{{ asset('assets/images/gallery/category-1/4.jpg') }}">
                                                     <span class="overlay-v">
                                                         <i></i>
                                                     </span>
                                                 </a>
-                                                <img src="images/gallery/category-3/4.jpg" class="img-responsive img-rounded" alt="">
+                                                <img src="{{ asset('assets/images/gallery/category-1/4.jpg') }}" class="img-responsive img-rounded" alt="">
                                             </figure>
                                         </div>
 
                                         <div class="col-md-4 text-center mb10">
                                             <figure class="picframe img-rounded mb20">
-                                                <a class="image-popup" href="images/gallery/category-3/5.jpg">
+                                                <a class="image-popup" href="{{ asset('assets/images/gallery/category-1/5.jpg') }}">
                                                     <span class="overlay-v">
                                                         <i></i>
                                                     </span>
                                                 </a>
-                                                <img src="images/gallery/category-3/5.jpg" class="img-responsive img-rounded" alt="">
+                                                <img src="{{ asset('assets/images/gallery/category-1/5.jpg') }}" class="img-responsive img-rounded" alt="">
                                             </figure>
                                         </div>
 
                                         <div class="col-md-4 text-center mb10">
                                             <figure class="picframe img-rounded mb20">
-                                                <a class="image-popup" href="images/gallery/category-3/6.jpg">
+                                                <a class="image-popup" href="{{ asset('assets/images/gallery/category-1/6.jpg') }}">
                                                     <span class="overlay-v">
                                                         <i></i>
                                                     </span>
                                                 </a>
-                                                <img src="images/gallery/category-3/6.jpg" class="img-responsive img-rounded" alt="">
+                                                <img src="{{ asset('assets/images/gallery/category-1/6.jpg') }}" class="img-responsive img-rounded" alt="">
                                             </figure>
                                         </div>
 
@@ -454,6 +460,21 @@
             </div>
         </section>
 
+        <section id="section-gallery" style="padding-top: 0;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2>Lokasi Acara</h2>
+                        <div class="spacer-single"></div>
+                    </div>
+                    <div class="col-md-12">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63115.6038767317!2d115.14962614617555!3d-8.622354913659803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2409b05b69a35%3A0xaa9f26310a950b49!2sASTON%20Denpasar%20Hotel%20%26%20Convention%20Center!5e0!3m2!1sen!2sid!4v1592266688047!5m2!1sen!2sid" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
     </div>
     <!-- content close -->
 
@@ -461,8 +482,9 @@
     <footer>
         <div class="container text-center text-light">
             <div class="row">
-                <div class="col-md-12">
-                    <h2 class="hs1 wow fadeInUp">Wawan<span>&amp;</span>Yuni</h2>
+                <div class="col-md-12" style="padding: 70px 0px;">
+                    <p class="hs1 wow fadeInUp" style="font-size: 28px;">Thank You</p>
+                    <h2 class="hs1 wow fadeInUp" style="font-size: 60px;letter-spacing: 2px;">Wawan<span>&amp;</span>Yuni</h2>
                 </div>
             </div>
         </div>
