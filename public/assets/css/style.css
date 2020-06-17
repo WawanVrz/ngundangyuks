@@ -5555,6 +5555,8 @@ a.read_more i {
 	display: block;
 	width: 100%;
 	height: 100%;
+	height: 100vh !important;
+    object-fit: cover;
 }
 .owl-slider-nav {
 	position: absolute;
@@ -6143,8 +6145,37 @@ a, img {
 @media only screen and (max-width: 992px) {
 	#custom-owl-slider .item img{
 		width:100% !important;
-		height:auto !important;
+		height: 100vh !important;
+		object-fit: cover;
 	}
+
+	.deco-big{
+		display: block;
+		font-size: 120px;
+		font-family: "Allura";
+		margin-top: 0;
+		font-weight: normal;
+		padding: 50px;
+		margin-bottom: 15px;
+	}
+
+	#section-quote{
+		padding: 50px 0px;
+	}
+
+	h2{
+		font-size: 50px;
+	}
+	
+	.fam{
+		font-size: 16px;
+		letter-spacing: 1px;
+	}
+
+	.circle{
+		display: none;
+	}
+
 	#custom-owl-slider .item{
 		overflow:hidden;
 	}
@@ -6516,15 +6547,92 @@ a, img {
 @media only screen and (max-width: 767px) {
 	#custom-owl-slider .item img{
 		width:200% !important;
-		height:auto !important;
-		margin-left:-60%;
+		height: 100vh !important;
+		object-fit: cover;
 	}
 	#custom-owl-slider .item{
 		overflow:hidden;
 	}
+
+	h2{
+		font-size: 30px;
+	}
+
+	h2.name {
+		font-size: 85px;
+	}
+
+	#section-quote{
+		padding: 50px 0px;
+	}
+
+	#section-guestbook{
+		padding: 50px 0px;
+	}
+
+	#section-event{
+		padding-top: 0px;
+	}
+
+	.titsection{
+		font-size: 42px;
+	}
+
+	#section-gallery{
+		padding-top: 50px;
+		padding-bottom: 0px;
+	}
+
+	.spacer-single{
+		display: none;
+	}
+
+	.foot{
+		font-size: 8px !important;
+		background-size: cover;
+		margin-bottom: 0px;
+	}
+
+	.deco-big {
+		display: block;
+		font-size: 80px;
+		font-family: "Allura";
+		margin-top: -5px;
+		font-weight: normal;
+		padding: 15px;
+		margin-bottom: 25px;
+	}
+
+	.padding40{
+		padding: 10px;
+	}
+
+	.padding40 h2{
+		font-size: 36px;
+		letter-spacing: 1px;
+	}
+
+	#section-couple{
+		padding-bottom: 0px;
+	}
+
+	.spacer-double{
+		display: none;
+	}
+
+	.container .col-md-5{
+		text-align: center;
+	}
 	
+	blockquote.very-big{
+		font-size: 20px;
+		font-weight: 300;
+		background: none;
+		padding: 0;
+	}
+
 	header div#logo h2 {
-	font-size: 24px;
+	font-size: 26px;
 	margin-top: 24px;
 	}
 	#subheader h1 {
@@ -6539,11 +6647,11 @@ a, img {
 		font-size: 12px;
 	}
 	.countdown-amount {
-		font-size: 36px;
+		font-size: 34px;
 	}
 	.container {
-		padding-left: 30px;
-		padding-right: 30px;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 	#filters li.pull-right {
 		float: none !important;

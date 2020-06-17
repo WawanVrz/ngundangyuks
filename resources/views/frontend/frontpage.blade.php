@@ -20,14 +20,14 @@ Hisyam Rahmawan Suharno, S.T.,M.T Putra Pertama dari pasangan Bapak Wawan & Ibu 
                 <div class="col-md-12">
                     <!-- logo begin -->
                     <div id="logo">
-                        <a href="index.html">
+                        <a href="">
                             <h2>Wawan<span>&amp;</span>Yuni</h2>
                         </a>
                     </div>
                     <!-- logo close -->
 
                     <!-- small button begin -->
-                    <span id="menu-btn"></span>
+                    <span id="menu-btn" style="display:none;"></span>
                     <!-- small button close -->
 
                     <span class="btn-rsvp">RSVP</span>
@@ -174,7 +174,7 @@ Hisyam Rahmawan Suharno, S.T.,M.T Putra Pertama dari pasangan Bapak Wawan & Ibu 
                         <img src="{{ asset('assets/images/misc/2.jpg') }}" alt="" class="img-responsive img-rounded wow fadeInLeft" data-wow-delay=".2s" />
                         <div class="padding40">
                             <h2>Hisyam Rahmawan Suharno, S.T.,M.T</h2>
-                            <p>Putra Pertama dari pasangan <br>Bapak Wawan & Ibu Wawan <br> Badung</p>
+                            <p class="fam">Putra Pertama dari pasangan <br>Bapak Wawan & Ibu Wawan <br> Badung</p>
                         </div>
                     </div>
 
@@ -182,7 +182,7 @@ Hisyam Rahmawan Suharno, S.T.,M.T Putra Pertama dari pasangan Bapak Wawan & Ibu 
                         <img src="{{ asset('assets/images/misc/1.jpg') }}" alt="" class="img-responsive img-rounded wow fadeInRight" data-wow-delay=".2s" />
                         <div class="padding40">
                             <h2>Ni Luh Putu Yuni Antari, S.Pd</h2>
-                            <p>Putri Pertama dari pasangan <br>Bapak Yuni & Ibu Yuni <br> Tabanan</p>
+                            <p class="fam">Putri Pertama dari pasangan <br>Bapak Yuni & Ibu Yuni <br> Tabanan</p>
                         </div>
                     </div>
 
@@ -248,10 +248,10 @@ Hisyam Rahmawan Suharno, S.T.,M.T Putra Pertama dari pasangan Bapak Wawan & Ibu 
                         <img src="{{ asset('assets/images/misc/3.jpg') }}" alt="" class="img-responsive img-rounded wow fadeInLeft">
                     </div>
 
-                    <div class="col-md-5 col-md-offset-1 pt40 pb40 wow fadeIn" data-wow-delay=".5s">
+                    <div class="col-md-5 col-md-offset-1 pt40 pb40 sec1 wow fadeIn" data-wow-delay=".5s">
                         <h3>Akad Nikah</h3>
                         Sabtu, 29 Desember 2020<br> 10:00 AM - 12:00 PM (WITA)<br> Masjid Agung Sudirman<br> Jl. Slamet Riyadi No.1, Kota Denpasar, Bali - Indonesia <br>
-                        <a href="https://maps.google.com/maps?q=221B+Baker+Street,+London,+United+Kingdom&amp;hl=en&amp;t=v&amp;hnear=221B+Baker+St,+London+NW1+6XE,+United+Kingdom"
+                        <a href="https://maps.google.com/maps?q=Masjid+Agung+Sudirman&amp;hl=en&amp;t=v&amp;hnear=Masjid+Agung+Sudirman"
                             class="btn btn-custom mt30 popup-gmaps">View on map</a>
                     </div>
                 </div>
@@ -259,10 +259,10 @@ Hisyam Rahmawan Suharno, S.T.,M.T Putra Pertama dari pasangan Bapak Wawan & Ibu 
                 <div class="spacer-double"></div>
 
                 <div class="row">
-                    <div class="col-md-5 pt40 pb40 text-right wow fadeIn" data-wow-delay=".5s">
+                    <div class="col-md-5 pt40 pb40 text-right sec2 wow fadeIn" data-wow-delay=".5s">
                         <h3>Resepsi Pernikahan</h3>
                         Sabtu, 29 Desember 2020<br> 17:00 PM - Selesai (WITA)<br> Aston Hotel Denpasar<br> Jl. Gatot Subroto Barat No.283, Kota Denpasar, Bali - Indonesia <br>
-                        <a href="https://maps.google.com/maps?q=221B+Baker+Street,+London,+United+Kingdom&amp;hl=en&amp;t=v&amp;hnear=221B+Baker+St,+London+NW1+6XE,+United+Kingdom"
+                        <a href="https://maps.google.com/maps?q=ASTON+Denpasar+Hotel+%26+Convention+Center&amp;hl=en&amp;t=v&amp;hnear=ASTON+Denpasar+Hotel+%26+Convention+Center"
                             class="btn btn-custom mt30 popup-gmaps">View on map</a>
                     </div>
 
@@ -293,7 +293,7 @@ Hisyam Rahmawan Suharno, S.T.,M.T Putra Pertama dari pasangan Bapak Wawan & Ibu 
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h2>Gallery Photo</h2>
+                        <h2 class="titsection">Gallery Photo</h2>
                         <div class="spacer-single"></div>
                     </div>
 
@@ -464,7 +464,7 @@ Hisyam Rahmawan Suharno, S.T.,M.T Putra Pertama dari pasangan Bapak Wawan & Ibu 
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h2>Lokasi Acara</h2>
+                        <h2 class="titsection">Lokasi Acara</h2>
                         <div class="spacer-single"></div>
                     </div>
                     <div class="col-md-12">
@@ -492,7 +492,7 @@ Hisyam Rahmawan Suharno, S.T.,M.T Putra Pertama dari pasangan Bapak Wawan & Ibu 
         <div class="subfooter">
             <div class="container text-center">
                 <div class="row">
-                    <div class="col-md-12" style="font-size: 11px;">
+                    <div class="col-md-12 foot" style="font-size: 11px;">
                         &copy; Copyright 2020 - Wawan & Yuni Wedding | My Invitation. All Right Reserved.
                     </div>
                 </div>
